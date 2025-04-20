@@ -1,0 +1,22 @@
+#Error analysis
+when we get perfect model, If we want to improve it , we need to analyze the type of erro is this making.
+
+firsst we prediction function 
+>ie crss_val_predict ()
+then calll the  confusion matrix 
+>ie confusion_matrix()
+>>> y_train_pred = cross_val_predict(sgd_clf, X_train_scaled, y_train, cv=3)
+>>> conf_mx = confusion_matrix(y_train, y_train_pred)
+>>> conf_mx
+] to see in image representation
+plt.matshow(conf_mx, cmap=plt.cm.gray)
+plt.show()
+
+### matrix wiill be considered as good if most images on the main diagonal .ie classified correctl
+if the some image so some dark this means that there are few image of this image 
+
+
+#####
+plots of Errors
+
+#### multilabel classification 
